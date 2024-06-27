@@ -9,23 +9,35 @@ import backgroundEst from "./assets/background/estudios.jpg";
 const App = () => {
   return (
     <div className="relative min-h-screen">
-      <div className="absolute inset-0" style={{backgroundImage: `url(${backgroundSM})`, zIndex: -1}} />
-      <Navbar />
-      <h1 className="text-3xl font-bold underline p-10 text-center">Pablo Cerda Isasmendi</h1>
-      <div className="flex justify-center">
-        <Card
-          title="Sobre mí"
-          description="Soy Pablo Cerda Isasmendi, nacido en Chillán y actualmente residiendo en Antofagasta. Me titulé en Ingeniería en Computación e Informática en 2024. Estoy expandiendo mis conocimientos en desarrollo web, tanto en backend como en frontend, con un enfoque particular en React y Tailwind CSS.
+      {/* Fondo gris fijo */}
+      <div className="fixed inset-0 w-full h-full bg-gray-700 z-0"></div>
+      
+      {/* Contenido principal */}
+      <div className="relative z-10">
+        <Navbar />
+        <h1 className="text-3xl font-bold underline p-10 text-center">Pablo Cerda Isasmendi</h1>
+        <div className="flex justify-center">
+          <Card
+            title="Sobre mí"
+            description="Soy Pablo Cerda Isasmendi, nacido en Chillán y actualmente residiendo en Antofagasta. Me titulé en Ingeniería en Computación e Informática en 2024. Estoy expandiendo mis conocimientos en desarrollo web, tanto en backend como en frontend, con un enfoque particular en React y Tailwind CSS.
 
 Además, tengo experiencia en la evaluación de proyectos TI y data science. Estoy entusiasmado por adquirir más conocimientos y experiencia profesional en estos campos, siempre buscando nuevos desafíos y oportunidades para crecer y mejorar mis habilidades."
-        />
+          />
+        </div>
+        <div className="p-96"></div>
+        
+        {/* Nueva sección con otro fondo */}
+        <div className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${backgroundEst})` }}>
+          <div className="flex justify-center items-center h-full">
+            <h2 className="text-3xl font-bold text-white">Sección de Estudios</h2>
+          </div>
+        </div>
+        
+        <footer className="bg-gray-900 text-white py-6 text-center">
+          <p>&copy; 2024 Pablo Cerda Isasmendi. Todos los derechos reservados.</p>
+        </footer>
       </div>
-      <div className="p-96"></div>
-      <footer className="bg-gray-900 text-white py-6 text-center absolute bottom-0 w-full">
-        <p>&copy; 2024 Pablo Cerda Isasmendi. Todos los derechos reservados.</p>
-      </footer>
     </div>
-    
   );
 };
 
