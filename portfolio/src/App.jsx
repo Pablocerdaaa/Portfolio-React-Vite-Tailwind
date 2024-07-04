@@ -22,7 +22,7 @@ const App = () => {
             <div className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${backgroundSM})` }}>
               <div className="flex justify-center items-center h-full">
             <Card
-            title="Sobre mí"
+            GrandTitle="Sobre mí"
             description="Soy Pablo Cerda Isasmendi, nacido en Chillán y actualmente residiendo en Antofagasta. Me titulé en Ingeniería en Computación e Informática en 2024. Estoy expandiendo mis conocimientos en desarrollo web, tanto en backend como en frontend, con un enfoque particular en React y Tailwind CSS.
 
 Además, tengo experiencia en la evaluación de proyectos TI y data science. Estoy entusiasmado por adquirir más conocimientos y experiencia profesional en estos campos, siempre buscando nuevos desafíos y oportunidades para crecer y mejorar mis habilidades."
@@ -32,9 +32,9 @@ Además, tengo experiencia en la evaluación de proyectos TI y data science. Est
           </div>
         
         {/* Nueva sección con otro fondo */}
-        <div className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${backgroundEst})` }}>
-          <div className="flex justify-center items-center h-full">
-            <Card title="Estudios" description="Escuela Huanchaca E-56" />
+        <div className="relative w-full h-screen bg-cover bg-center p-15" style={{ backgroundImage: `url(${backgroundEst})` }}>
+          <div className="flex justify-start items-start h-full">
+            <Card GrandTitle="Estudios" title="Educación basica" description="Escuela Huanchaca E-56 Antofagasta (2004-2011)" title2="Educación media" description2="Colegio Eagle School (2012-2015)" title3="Educación Superior" description3="Universidad catolica del norte (2016-2024)"/>
           </div>
         </div>
         
